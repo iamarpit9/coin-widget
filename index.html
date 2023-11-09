@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Widget</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div class="btn-group">
+      <button onclick='fetchToken("bitcoin")'>
+        <img src="/assets/bitcoin.webp" alt="" />
+      </button>
+      <button onclick='fetchToken("ethereum")'>
+        <img src="/assets/ethereum.webp" alt="" />
+      </button>
+      <button onclick='fetchToken("tether")'>
+        <img src="/assets/Tether.webp" alt="" />
+      </button>
+      <button onclick='fetchToken("usd-coin")'>
+        <img src="/assets/usdc.webp" alt="" />
+      </button>
+    </div>
+
+    <div id="coinWidget"></div>
+
+    <script type="text/javascript" src="/coinWidget.js"></script>
+  </body>
+</html>

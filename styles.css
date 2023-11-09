@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  background-color: #0f0f0f;
+  color: #cd5c08;
+}
+
+.btn-group button {
+  margin: 10px;
+}
+
+#coinWidget {
+  width: 350px;
+  margin: 10px;
+}
+
+.widgetContainer {
+  width: 100%;
+  border: 1px solid #f5e8b7;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.15rem solid #f5e8b7;
+  padding: 10px;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.title div {
+  margin: 2px;
+}
+
+.title span {
+  font-size: smaller;
+}
+
+.title .tokenName {
+  color: #005b41;
+  font-size: large;
+  font-weight: 900;
+}
+
+.deatils {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.marCap,
+.tradeVol {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px;
+  align-items: center;
+}
+
+.marCap {
+  border-right: 0.15rem solid #f5e8b7;
+}
+
+.marCap span,
+.tradeVol span {
+  padding: 5px;
+}
+
+.pHead {
+  font-size: smaller;
+  color: #005b41;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  background-color: #0f0f0f;
+  cursor: pointer;
+}
+
+button:hover {
+  color: none;
+  transform: scale(1.1);
+}
+/* LOADER */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #cd5c08;
+  border-bottom-color: #f5e8b7;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-left: 150px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
